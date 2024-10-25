@@ -118,4 +118,145 @@ let firstName;
 ```
 
 [![definir-Variable.png](https://i.postimg.cc/yY78g14Q/definir-Variable.png)](https://postimg.cc/bdFh4jvk)
+Ahora si le podemos asignar una cadena vacía y el editor automáticamente detectara que es un  **string**.
 
+```TypeScript
+let firstName = '';
+```
+
+[![definir-Variable-Correcto.png](https://i.postimg.cc/FsZx6ZhG/definir-Variable-Correcto.png)](https://postimg.cc/8j7WJLJr)
+Si se crea una variable y se le asigna un 0 (cero) sera un tipo de dato numérico:
+
+```TypeScript
+let firstName = '';
+let age = 0;
+```
+
+No es necesario asignar valor a una variable para que tome el tipo de dato, se puede asignar el tipo de dato a una variable cuando es definida.
+La forma de hacerlo es la siguiente:
+
+```TypeScript
+let firstName = '';
+let age = 0;
+
+let isMan: boolean;
+```
+
+Después del nombre de la variable se ponen dos puntos **(;)** seguidos del tipo de variable.
+
+**Ventajas de definir un tipo de dato en una variable**:
+El editor puede marcar un error donde menciona que no puedes asignar ese valor, puesto que no corresponde al tipo de dato.
+
+```TypeScript
+let firstName = '';
+let age = 0;
+
+let isMan: boolean = 'false';
+```
+
+[![no-Corresponde-Al-Tipo-De-Dato.png](https://i.postimg.cc/vHHn4ddL/no-Corresponde-Al-Tipo-De-Dato.png)](https://postimg.cc/qgSqFSqz)
+
+// Quedan pendientes cosas de la leccion 2 de TypeScript
+
+## Lección 3. Introducción a Angular.
+
+La primera versión que se lanzó de ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) fue en 2010, esta versión hace uso de ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) , de ahí el nombre de ![Angular.js](https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white) ; si bien actualmente se sigue utilizando, tiene más potencial **Angular 2+** ya que utiliza tecnologías más nuevas como ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) , entre otras.
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)  es un *framework* desarrollado por ![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white). 
+**SPA**: *Single Page Application*.
+Es Una aplicación web que maneja solamente una única pagina web para mostrar los elementos ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  Ejemplos de estas paginas son ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)  y ![Netflix](https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white) .
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) es un framework que utiliza el patrón MVC: Modelo Vista Controlador, llamado así por la separación del código en tres capas, las cuales son:
+
+**Modelo:** Es la capa donde se trabaja con los datos.
+**Vista:** Es la capa donde se trabaja con la interfaz que va a mostrar al usuario.
+**Controlador:** Es la capa donde se ejecutan las acciones que realiza un usuario sobre la aplicación. 
+
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)  hace uso del lenguaje de programación ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)  
+
+Ejemplo de componente:
+Las partes se;aladas son un ejemplo de componentes.
+
+[![componentes.png](https://i.postimg.cc/zG9vqsjj/componentes.png)](https://postimg.cc/gxHmDB1X)
+**En resumen un componente puede ser desde un botón *input* hasta una pagina completa.**
+
+Un buen proyecto no solo se evalúa por su funcionamiento, lineas de código, etc. También se evalúa por su orden.
+Entonces cuando se dice que ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)  es modular se refiere a que se pueden crear módulos para tener todo mas organizado.
+
+[![grafico.png](https://i.postimg.cc/bYMKVqN3/grafico.png)](https://postimg.cc/8sRKjQv6)
+Para poder crear un primer componente vamos a necesitar crear un proyecto con ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) .
+Necesitamos: 
+Tener instalado ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) y el gestor de paquetes **NPM**. Ademas de instalar el paquete **Angular-cli**. Para ello debemos abrir la terminal y ejecutar el siguiente comando:
+
+```bash
+sudo npm install -g @Angular/cli
+```
+
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)  cli nos ayuda a generar un proyecto de ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) , cli significa Command Line Interface, es español: Interfaz de Línea de Comandos. 
+
+Una vez instalado el cli de ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white), para crear un proyecto ejecutamos el siguiente comando:
+```bash
+ng new nombreDelProyecto
+```
+
+El mismo sistema nos preguntara si deseamos agregar el ruteo de ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white), solo debemos indicar que si (y).
+Enseguida nos pedirá seleccionar el lenguaje de hoja de estilos que deseamos utilizar, en este caso usaremos SCSS.
+Finalmente comenzara a crear la estructura del proyecto y a instalar los paquetes necesarios.
+
+[![creacion-Estructura-De-Proyecto.png](https://i.postimg.cc/x1Fx8RJg/creacion-Estructura-De-Proyecto.png)](https://postimg.cc/w1LcbDks)
+Para abrir una carpeta en ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  desde la terminal se debe usar el siguiente comando:
+
+```bash
+code ruta/a/la/carpeta 
+```
+
+Una vez abierta la carpeta en ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white), nos mostrara algunos directorios, por ejemplo, el directorio ***node_modules*** contiene todas las dependencias necesarias para ejecutar el proyecto.
+El directorio ***src*** va a contener todo el código que escribiremos, el cual contendrá módulos, componentes, directivas, etc.
+
+El archivo ***Angular.json*** contiene la configuración que requiere ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) .
+El archivo ***package.json*** contiene la configuración de nuestra aplicación, es decir: nombre, dependencias, scripts, etc.
+
+El archivo ***tsconfig.json*** contiene la configuración de ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white).
+
+El directorio ***src*** > ***app*** es donde crearemos los componentes, módulos, etc.
+
+El directorio ***assets*** es utilizado para almacenar todos los recursos que utilizara la aplicación, tales como: **scripts e imágenes**, entre otros.
+
+El directorio ***enviroments*** es utilizado para almacenar configuraciones globales, tales como variables de entorno para desarrollo y producción.
+
+Abriremos la terminal de ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) para ejecutar el proyecto de ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white). 
+
+En ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) automáticamente nos posiciona el directorio donde se encuentra el proyecto.
+
+Para ejecutar el proyecto hacemos uso del comando:
+
+```bash
+ng serve
+```
+
+[![ejecucion-Proyecto.png](https://i.postimg.cc/7LJC7gXq/ejecucion-Proyecto.png)](https://postimg.cc/8FDPgfqY)
+Damos clic en el link http:///localhost:4200/ y nos llevara a la siguiente pagina:
+
+[![pagina-Mi-Primera-App.png](https://i.postimg.cc/cC06VPWJ/pagina-Mi-Primera-App.png)](https://postimg.cc/7Gtxzsfv)
+Que realmente esta es una vista que  ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) nos muestra inicialmente.
+
+El archivo *app.component.html* contiene el diseño y vista de la pagina que ya vimos anteriormente, vamos a borrarlo, guardamos y veamos lo que nos muestra el navegador:
+
+[![pagina-Mi-Primera-App-Vacia.png](https://i.postimg.cc/BnYYtG7d/pagina-Mi-Primera-App-Vacia.png)](https://postimg.cc/18FcYbQH)
+Ahora esta en blanco y también notamos que automáticamente se ven reflejados los cambios.
+
+Vamos a crear un nuevo  componente, para ello necesitamos abrir una nueva terminal, presionamos sobre el botón con el símbolo + (mas).
+
+En la terminal escribimos el comando:
+
+```bash
+ng generate component nombre_del_componente
+```
+
+En este caso se llamara:
+
+```bash 
+ng generate component nuevoComponente
+```
+
+Se deben agregar los componentes a un modulo para que ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) los reconozca.
+
+Ademas en el nuevo directorio nuevoComponente 
