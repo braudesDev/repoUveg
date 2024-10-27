@@ -11,10 +11,14 @@
             "id": "2244f097b66e9352",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "linux/comandosGenerales/Tabla De Comandos Para Terminal Linux.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tabla De Comandos Para Terminal Linux"
             }
           }
         ]
@@ -166,6 +170,9 @@
   },
   "active": "2244f097b66e9352",
   "lastOpenFiles": [
+    "linux/comandosGenerales/Tabla De Comandos Para Terminal Linux.md",
+    "linux/comandosGenerales",
+    "linux",
     "Cronograma De Actividades.md",
     "DesarrolloDeAppsMovilesHibridas/Anotaciones Importantes..md",
     "EstadiasProfesionales",
