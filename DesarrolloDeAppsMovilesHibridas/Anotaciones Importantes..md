@@ -259,4 +259,126 @@ ng generate component nuevoComponente
 
 Se deben agregar los componentes a un modulo para que ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) los reconozca.
 
-Ademas en el nuevo directorio nuevoComponente 
+Ademas en el nuevo directorio nuevoComponente tiene los tres archivos que se habían comentado, un ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white), un ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) un ***.ts*** y hay un cuarto archivo que se utiliza para hacer pruebas unitarias, es decir, pruebas por cada componente.
+
+Para agregar un componente vamos a abrir el archivo ***.ts*** del componente creado .
+En la clase del componente se puede ver que por encima tiene un decorador *@Component*  estos son usados para agregar funcionalidad a una clase:
+
+```TypeScript
+import { Component } from '@angular/core';
+@component({
+selector:'app-nuevo-componente',
+standalone: true,
+imports: [],
+templateUrl: './nuevo-componente-component.html',
+styleUrl: './nuevo-componente.component.scss'
+})
+export class NuevoComponenteComponent {
+
+}
+```
+
+Por eso la propiedad ***templateUrl*** apunta al archivo *html*, con la cual enlaza el ***.ts*** con el *html*!.
+[![abrir-Ts-Del-Componente-Creado.png](https://i.postimg.cc/85Vrmssx/abrir-Ts-Del-Componente-Creado.png)](https://postimg.cc/Y4b9pr6x)
+El texto que pongamos en el componente se vera reflejado en la pagina, y que pasaria si mandamos llamar varias veces el componente?: 
+
+```html
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+
+<app-nuevo-componente></app-nuevo-componente>
+```
+
+[![mandar-Llamar-Componente-png.png](https://i.postimg.cc/yxpChQ7x/mandar-Llamar-Componente-png.png)](https://postimg.cc/dZCfw9kc)
+El componente renderiza el numero de veces que se manda a llamar.
+
+Se le conoce como ***Binding*** a la unión de las propiedades entre el archivo ***.ts*** y el ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) de los componentes.
+
+Ahora en: nuevo-componente.component.ts usamos el siguiente código creando un atributo en la clase llamada *name*, posteriormente se le asigna un valor en el método *ngOnInit*, este método se manda a llamar cuando se crea el componente..
+Para saber el valor del atributo *name* en ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white), hacemos uso de las dobles llaves y dentro escribimos el nombre del atributo:
+
+```TypeScript
+import { Component, OnInit } from '@angular/core';
+
+
+@Component({
+
+selector: 'app-nuevo-componente',
+
+standalone: true,
+
+templateUrl: './nuevo-componente.component.html',
+
+styleUrls: ['./nuevo-componente.component.scss']
+
+})
+
+export class NuevoComponenteComponent implements OnInit {
+
+name: string = '';
+
+
+constructor() { }
+
+
+ngOnInit(): void {
+
+this.name = 'Braulio Rodriguez'
+
+}
+}
+```
+
+```html
+<h1>Mi primer componente</h1>
+
+<p>
+Valor del atributo name:{{ name }}
+</p>
+```
+
+[![ngOnInit.png](https://i.postimg.cc/76N0Pck5/ngOnInit.png)](https://postimg.cc/DJ88Bxmh)
+Luego para que el componente se vea reflejado en la pagina localhost: hay que poner la etiqueta solo en este caso ya que así se llama el componente:
+
+```html
+<app-nuevo-componente></app-nuevo-componente>
+```
+
+Para que de cierta manera se imprima en la pagina.
+
+En pocas palabra se debe hacer todo esto:
+
+[![componente-Para-Mostrar-En-Local-Host.png](https://i.postimg.cc/GtQWQc1b/componente-Para-Mostrar-En-Local-Host.png)](https://postimg.cc/RJWpCxFY)
