@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/comandosGenerales/Tabla De Comandos Para Terminal Linux.md",
+                "file": "linux/comandosGenerales/linux..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tabla De Comandos Para Terminal Linux"
+              "title": "linux."
             }
           }
         ]
@@ -170,6 +170,7 @@
   },
   "active": "2244f097b66e9352",
   "lastOpenFiles": [
+    "linux/comandosGenerales/linux..md",
     "linux/comandosGenerales/Tabla De Comandos Para Terminal Linux.md",
     "linux/comandosGenerales",
     "linux",
