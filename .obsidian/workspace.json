@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "3daa597bf8152566",
+    "type": "split",
+    "children": [
+      {
+        "id": "13216afae689c96b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a32c3fedfb8683d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UNIDAD 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UNIDAD 1"
+            }
+          },
+          {
+            "id": "c14b0a37a3af6273",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UNIDAD 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UNIDAD 2"
+            }
+          },
+          {
+            "id": "47e234feeb0e92f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UNIDAD 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UNIDAD 3"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "493aaa01b816b87b",
+    "type": "split",
+    "children": [
+      {
+        "id": "e149139e13248981",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2b1cdcbc14392b0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "5c63abb04b7c5076",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "53220fd8cbf0ac53",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "358ecf6a227df2bf",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6b46d31baa8eb75",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16cb3cbd69751f13",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "repoUveg/DesarrolloDeAppsMovilesHibridas/Desarrollo de aplicaciones móviles híbridas..md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Desarrollo de aplicaciones móviles híbridas."
+            }
+          },
+          {
+            "id": "a77dc528f4265009",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "repoUveg/DesarrolloDeAppsMovilesHibridas/Desarrollo de aplicaciones móviles híbridas..md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Desarrollo de aplicaciones móviles híbridas."
+            }
+          },
+          {
+            "id": "161fb0a99bff4ff3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "a3fdb452a9f84356",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "repoUveg/DesarrolloDeAppsMovilesHibridas/Desarrollo de aplicaciones móviles híbridas..md"
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Desarrollo de aplicaciones móviles híbridas."
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "47e234feeb0e92f7",
+  "lastOpenFiles": [
+    "UNIDAD 2.md",
+    "UNIDAD 3.md",
+    "UNIDAD 1.md",
+    "repoUveg/DesarrolloDeAppsMovilesHibridas/Desarrollo de aplicaciones móviles híbridas..md",
+    "Taller de Comunicacion efectiva v2"
+  ]
+}
