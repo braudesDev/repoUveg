@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UNIDAD 1.md",
+                "file": "UNIDAD 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UNIDAD 1"
+              "title": "UNIDAD 2"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "UNIDAD 3"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,11 +190,29 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c2b1cdcbc14392b0",
+  "active": "7a32c3fedfb8683d",
   "lastOpenFiles": [
-    "UNIDAD 2.md",
-    "UNIDAD 3.md",
     "UNIDAD 1.md",
+    "UNIDAD 3.md",
+    "repoUveg/repoUveg/repoUveg",
+    "repoUveg/repoUveg/repoTrabajosUveg",
+    "repoUveg/repoUveg/linux/comandosGenerales/Comandos.md",
+    "repoUveg/repoUveg/linux/comandosGenerales",
+    "repoUveg/repoUveg/linux",
+    "repoUveg/repoUveg/UNIDAD 3.md",
+    "repoUveg/repoUveg/UNIDAD 2.md",
+    "repoUveg/repoUveg/UNIDAD 1.md",
+    "repoUveg/repoUveg/DesarrolloDeAppsMovilesHibridas/Desarrollo de aplicaciones móviles híbridas..md",
+    "repoUveg/repoUveg/DesarrolloDeAppsMovilesHibridas/Anotaciones Importantes..md",
+    "repoUveg/repoUveg/DesarrolloDeAppsMovilesHibridas",
+    "repoUveg/repoUveg",
+    "linux/comandosGenerales/Comandos.md",
+    "linux/comandosGenerales",
+    "linux",
+    "DesarrolloDeAppsMovilesHibridas/Desarrollo de aplicaciones móviles híbridas..md",
+    "DesarrolloDeAppsMovilesHibridas/Anotaciones Importantes..md",
+    "DesarrolloDeAppsMovilesHibridas",
+    "UNIDAD 2.md",
     "repoUveg/DesarrolloDeAppsMovilesHibridas/Desarrollo de aplicaciones móviles híbridas..md",
     "repoUveg/Taller de Comunicacion efectiva v2"
   ]
